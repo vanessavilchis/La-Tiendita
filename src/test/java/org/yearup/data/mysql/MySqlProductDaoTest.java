@@ -23,7 +23,6 @@ class MySqlProductDaoTest extends BaseDaoTestClass
     @Test
     public void getById_shouldReturn_theCorrectProduct()
     {
-        // arrange
         int productId = 1;
         Product expected = new Product()
         {{
@@ -38,10 +37,8 @@ class MySqlProductDaoTest extends BaseDaoTestClass
             setImageUrl("smartphone.jpg");
         }};
 
-        // act
         var actual = dao.getById(productId);
 
-        // assert
         assertEquals(expected.getPrice(), actual.getPrice(), "Because I tried to get product 1 from the database.");
     }
 

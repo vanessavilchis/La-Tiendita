@@ -44,7 +44,6 @@ public class CategoriesController
         }
     }
     @GetMapping("/{id}")
-    @PreAuthorize("permitAll()")
     public Category getById(@PathVariable int id)
     {
         try
