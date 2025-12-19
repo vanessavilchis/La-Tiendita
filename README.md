@@ -93,7 +93,7 @@ public void updateProduct(@PathVariable int id, @RequestBody Product product) {
 
 ---
 
-###  Phase 3: Shopping Cart (COMPLETE)
+###  Phase 3: Shopping Cart 
 
 **What I Built:**
 - Full shopping cart functionality for login users
